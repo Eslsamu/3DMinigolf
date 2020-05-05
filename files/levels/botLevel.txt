@@ -1,0 +1,22 @@
+9.81
+150;150
+30;30
+200;200
+3;4
+10;10
+0;9
+10;10;10;10;10;80;80;10;10;10;10;10;
+0;0.9;0;0.5;0;0;0.3;0;0.8;0;0;0;
+
+5,5;4,5;6,5;4,4;5,4;6,4;6,6;5,6;4,6;
+gravity
+targetX;targetY
+startX;startY
+width;length
+sideLengthX;sideLengthY
+rows;cols for obstaclegrid
+amountTrees;amountWallCells
+point1;point2...;pointn;(all points from left top to right bottom)
+friction1;friction2...;friction;
+t1X,t1Y;t2X,t2Y;...tnX,tnY
+w1X,w1Y;w2X,w2Y;...wnX,wnY

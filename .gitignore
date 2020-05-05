@@ -1,0 +1,66 @@
+# Compiled class file
+*.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+out/production/3D-Minigolf/view/winScreen.fxml
+out/production/3D-Minigolf/view/ui.fxml
+out/production/3D-Minigolf/view/settings.fxml
+out/production/3D-Minigolf/files/winpic.jpg
+out/production/3D-Minigolf/files/minigolf.css
+out/production/3D-Minigolf/files/metal_background.jpg
+out/production/3D-Minigolf/files/botLevel.txt
+out/production/3D-Minigolf/files/background.jpg
+out/production/3D-Minigolf/files/Level2.txt
+out/production/3D-Minigolf/files/Level1.txt
+out/production/3D-Minigolf/application/application.css
+out/production/3D-Minigolf/LICENSE
+out/production/3D-Minigolf/3D-Minigolf.iml
+out/production/3D-Minigolf/.idea/workspace.xml
+out/production/3D-Minigolf/.idea/vcs.xml
+out/production/3D-Minigolf/.idea/modules.xml
+out/production/3D-Minigolf/.idea/misc.xml
+out/production/3D-Minigolf/.gitignore
+3D-Minigolf.iml
+.idea/workspace.xml
+.idea/vcs.xml
+.idea/modules.xml
+.idea/misc.xml
+out/production/3D-Minigolf/files/test.txt
+out/production/3D-Minigolf/files/temp/test.txt
+out/production/3D-Minigolf/files/temp/Level2.txt
+out/production/3D-Minigolf/files/temp/Level1.txt
+out/production/3D-Minigolf/files/pictures/winpic.jpg
+out/production/3D-Minigolf/files/pictures/metal_background.jpg
+out/production/3D-Minigolf/files/pictures/background.jpg
+out/production/3D-Minigolf/files/levels/botLevel.txt
+out/production/3D-Minigolf/files/fxml/winScreen.fxml
+out/production/3D-Minigolf/files/fxml/settings.fxml
+out/production/3D-Minigolf/files/css/minigolf.css
+out/production/3D-Minigolf/files/fxml/ui.fxml
+out/production/3D-Minigolf/files/css/testing.css
+out/production/3D-Minigolf/files/fxml/test_screen.fxml
+out/production/3D-Minigolf/files/levels/test.txt
+out/production/3D-Minigolf/files/test_results/results.txt
+out/production/3D-Minigolf/files/literature/e0b8b848b65b3198882fae9e7ce0c8ac8d9f.pdf
+out/production/3D-Minigolf/files/pictures/grass_texture.jpg
+out/production/3D-Minigolf/files/pictures/grass_diffuse.jpg
+out/production/3D-Minigolf/files/fxml/course_creator.fxml
+out/production/3D-Minigolf/files/fxml/courseCreator.fxml

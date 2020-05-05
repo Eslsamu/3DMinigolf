@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.SubScene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <MenuBar prefHeight="30.0" prefWidth="647.0" styleClass="uiBox" stylesheets="@../css/minigolf.css" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#startGame" text="Start Game" />
+                  <MenuItem mnemonicParsing="false" onAction="#openCourseCreator" text="Create Course" />
+                  <MenuItem mnemonicParsing="false" onAction="#openFile" text="Select Course" />
+                  <MenuItem mnemonicParsing="false" onAction="#testBot" text="Test Bot" />
+                  <MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
+            </items>
+          </Menu>
+          <Menu fx:id="settings" mnemonicParsing="false" text="Settings">
+               <items>
+                  <MenuItem fx:id="constants" mnemonicParsing="false" onAction="#openSettings" text="constants" />
+               </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <right>
+      <VBox prefHeight="364.0" prefWidth="99.0" styleClass="uiBox" stylesheets="@../css/minigolf.css" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="mapPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="164.0" styleClass="minimapPane" stylesheets="@../css/minigolf.css" VBox.vgrow="ALWAYS" />
+            <Button mnemonicParsing="false" onAction="#toggleHeightMap" prefHeight="23.0" prefWidth="164.0" text="Toggle Heightmap" />
+            <Button fx:id="hitButton" mnemonicParsing="false" onAction="#hit" prefHeight="25.0" prefWidth="165.0" text="Hit" VBox.vgrow="ALWAYS" />
+            <TextField prefHeight="25.0" prefWidth="160.0" promptText="xVel" stylesheets="@../css/minigolf.css" VBox.vgrow="ALWAYS" fx:id="xVelField" />
+            <TextField fx:id="yVelField" prefHeight="25.0" prefWidth="160.0" promptText="yVel" stylesheets="@../css/minigolf.css" VBox.vgrow="ALWAYS" />
+            <VBox prefHeight="153.0" prefWidth="164.0" stylesheets="@../css/minigolf.css">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="80.0" stylesheets="@../files/css/minigolf.css" text="X:" VBox.vgrow="ALWAYS" fx:id="xPositionLabel" />
+                  <Label fx:id="yPositionLabel" prefHeight="17.0" prefWidth="73.0" text="Y:" VBox.vgrow="ALWAYS" />
+                  <Label prefHeight="17.0" prefWidth="78.0" text="xAcc:" VBox.vgrow="ALWAYS" fx:id="xAccLabel" />
+                  <Label fx:id="yAccLabel" prefHeight="17.0" prefWidth="73.0" text="yAcc" VBox.vgrow="ALWAYS" />
+                  <Label prefHeight="17.0" prefWidth="76.0" text="xVel" VBox.vgrow="ALWAYS" fx:id="xVelLabel" />
+                  <Label fx:id="yVelLabel" prefHeight="17.0" prefWidth="75.0" text="yVel" VBox.vgrow="ALWAYS" />
+                  <Label fx:id="slopeXLabel" prefHeight="17.0" prefWidth="74.0" text="slopeX:" VBox.vgrow="ALWAYS" />
+                  <Label fx:id="slopeYLabel" prefHeight="17.0" prefWidth="69.0" text="slopeY:" VBox.vgrow="ALWAYS" />
+                  <Label fx:id="frictionLabel" prefHeight="17.0" prefWidth="156.0" text="friction:" VBox.vgrow="ALWAYS" />
+               </children>
+            </VBox>
+            <ToggleButton fx:id="toggleBot" mnemonicParsing="false" onAction="#startBot" prefHeight="23.0" prefWidth="160.0" styleClass="button" stylesheets="@../css/minigolf.css" text="Bot" VBox.vgrow="ALWAYS" />
+            <ProgressBar fx:id="progressBar" prefHeight="25.0" prefWidth="160.0" progress="0.0" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <AnchorPane fx:id="gamePane" prefHeight="200.0" prefWidth="200.0" styleClass="gamePane" stylesheets="@../css/minigolf.css" BorderPane.alignment="CENTER">
+         <children>
+            <SubScene fx:id="gameScene" height="314.0" layoutX="51.0" layoutY="53.0" width="338.0">
+              <root>
+                <Region />
+              </root>
+            </SubScene>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <FlowPane fx:id="bottomPane" prefHeight="19.0" prefWidth="600.0" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

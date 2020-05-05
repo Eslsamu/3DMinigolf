@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="47.0" prefWidth="287.0" stylesheets="@../css/testing.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <ToolBar prefHeight="47.0" prefWidth="720.0" BorderPane.alignment="CENTER">
+        <items>
+          <Button mnemonicParsing="false" onAction="#startTest" text="Start " />
+            <ProgressBar fx:id="progressBar" prefHeight="18.0" prefWidth="119.0" progress="0.0" />
+            <VBox prefHeight="10.0" prefWidth="100.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="100.0" text="   Tests per Level:" textAlignment="RIGHT" />
+                  <TextField fx:id="testAmountField" prefHeight="17.0" prefWidth="134.0" promptText="100" text="100" />
+               </children>
+            </VBox>
+        </items>
+      </ToolBar>
+   </bottom>
+</BorderPane>

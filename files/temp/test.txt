@@ -1,0 +1,12 @@
+9.81
+80;80
+50;50
+100;100
+1
+0;0;0;0;100;100;0;0;0;0.5f
+200*e^(-(((x-50)/25)^4+((y-50)/25)^4)/2-0.8); -0.000460113 * (x - 50)^3 * e^((-(x - 50)^4 - (y - 50)^4)/781250;  -0.000460113 * (y - 50)^3 * e^((-(x - 50)^4 - (y - 50)^4)/781250);0;100;100;0;0;0;0.7f
+gravity
+targetX;targetY
+startX;startY
+totalPieces
+function;function;function;rotation;width;length;xpos;ypos;zpos;frictioncoefficient

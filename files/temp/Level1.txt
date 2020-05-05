@@ -1,0 +1,13 @@
+9.81
+350;250
+6
+0;0;0;0;100;100;0;0;0;0.9f
+100*0.5*(sin(2*pi*(x/100 - 0.25)) + 1);2*pi*cos(2*pi*((x/100) - 0.25));0;3;100;100;0;100;0;0.4f
+0;0;0;0;100;100;0;200;0;0.4f
+100*0.5*(sin(pi*(x/100 + 0.5)) + 1);0.5*pi*sin(pi*(x/100)+0.5*pi);0;0;100;200;100;200;-100;0.4f
+0;0;0;0;100;100;300;200;0;0.4f
+y;0;1;0;100;400;0;300;0;0.4f
+gravity
+targetX;targetY
+totalPieces
+function;function;function;rotation;width;length;xpos;ypos;zpos;frictioncoefficient
